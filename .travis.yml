@@ -14,4 +14,4 @@ script:
 
   # Run tests.
   # - ${PWD}/tests/test.sh
-  - make ci
+  - make travis
