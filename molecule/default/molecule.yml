@@ -10,6 +10,7 @@ platforms:
   # source: https://blog.opsfactory.rocks/testing-ansible-roles-with-molecule-97ceca46736a
   # source: https://github.com/solita/docker-systemd
   # source: https://github.com/solita/docker-systemd-ssh/blob/master/Dockerfile
+  #
   - name: xenial
     image: solita/ubuntu-systemd
     image_version: latest

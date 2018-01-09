@@ -1,4 +1,5 @@
 {
+  "python.pythonPath": "${workspaceFolder}/venv/bin/python",
   "files.exclude": {
     ".vagrant": "explorerExcludedFiles",
     ".DS_Store": "explorerExcludedFiles",
