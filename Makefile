@@ -104,7 +104,7 @@ bootstrap: venv
 
 travis: bootstrap venv ci
 
-travis-osx: bootstrap venv-osx ci
+travis-osx: venv-osx ci
 
 upgrade-setuptools:
 	pip install --ignore-installed --pre "https://github.com/pradyunsg/pip/archive/hotfix/9.0.2.zip#egg=pip" \

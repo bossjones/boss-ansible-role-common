@@ -1,2 +1,42 @@
 ---
 # defaults file for bossjones.common
+
+# List of common APT packages
+boss__common_base_packages:
+  - htop
+  - vim
+  - iftop
+  - iotop
+  - ntp
+  - unzip
+  - tar
+  - pigz
+  - zip
+  - gcc
+  - python-pip
+  - python-dev
+  - logrotate
+  - sysstat
+  - super
+  - traceroute
+  - tzdata
+
+boss__common_disable_ipv6: True
+
+boss__common_ntp_timezone: 'UTC'
+
+
+# Which clock management daemon/program should be setup?
+#
+# Choices (string):
+#
+# - ntpdate
+# - ntpd
+# - openntpd
+# - systemd-timesyncd
+boss__common_ntp_daemon: 'ntp'
+
+# Don't uninstall ``ntpdate`` package if it's installed. Be aware that
+# ``ntpdate-debian`` script is executed each time a network interface is
+# brought up. This might result in unexpected time jumps forward or backward.
+boss__common_ntp_ignore_ntpdate: False

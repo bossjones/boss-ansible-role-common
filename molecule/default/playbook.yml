@@ -2,5 +2,6 @@
 - name: Converge
   hosts: all
   roles:
-    - role: boss-ansible-role-commonbossjones__user: vagrant
+    - role: boss-ansible-role-common
+      bossjones__user: vagrant
       bossjones__group: vagrant
