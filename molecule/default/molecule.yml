@@ -1,0 +1,39 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+lint:
+  name: yamllint
+  enabled: False
+platforms:
+  - name: instance
+    image: ubuntu:16.04
+    # privileged: True
+provisioner:
+  name: ansible
+  lint:
+    name: ansible-lint
+    enabled: False
+    # EANSIBLE0013 should not be raised for shell tasks that use globs.
+    options:
+      x: ANSIBLE0013
+verifier:
+  name: testinfra
+  options:
+    verbose: True
+  lint:
+    name: flake8
+    enabled: False
+scenario:
+  name: default
+  test_sequence:
+    - destroy
+    - syntax
+    - create
+    - prepare
+    - converge
+    - lint
+    - side_effect
+    - verify
+    - destroy

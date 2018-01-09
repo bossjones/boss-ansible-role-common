@@ -1,0 +1,7 @@
+ansible==2.3.3.0
+yolk3k
+docker-py
+molecule>=2.6.0
+ansible-lint==3.4.20
+pyaml
+autopep8
