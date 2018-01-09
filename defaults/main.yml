@@ -19,6 +19,7 @@ boss__common_base_packages:
   - sysstat
   - super
   - traceroute
+  - tzdata
 
 boss__common_disable_ipv6: True
 

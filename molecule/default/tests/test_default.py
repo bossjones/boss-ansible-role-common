@@ -28,7 +28,7 @@ def test_systcl_settings(host, f):
 
 
 @pytest.mark.parametrize('f',
-                         ['htop', 'vim', 'iftop', 'iotop', 'ntp', 'unzip', 'tar', 'pigz', 'zip', 'gcc', 'python-pip', 'python-dev', 'logrotate', 'sysstat', 'super', 'traceroute'])
+                         ['htop', 'vim', 'iftop', 'iotop', 'ntp', 'unzip', 'tar', 'pigz', 'zip', 'gcc', 'python-pip', 'python-dev', 'logrotate', 'sysstat', 'super', 'traceroute', 'tzdata'])
 def test_packages_installed(host, f):
     pkg = host.package(f)
     assert pkg.is_installed
