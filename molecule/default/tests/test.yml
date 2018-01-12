@@ -1,4 +1,6 @@
 ---
-- hosts: allroles:
-    - role: boss-ansible-role-commonbossjones__user: vagrant
+- hosts: all
+  roles:
+    - role: boss-ansible-role-common
+      bossjones__user: vagrant
       bossjones__group: vagrant
