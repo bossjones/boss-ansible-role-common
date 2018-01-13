@@ -11,7 +11,7 @@ platforms:
   # source: https://github.com/solita/docker-systemd
   # source: https://github.com/solita/docker-systemd-ssh/blob/master/Dockerfile
   #
-  - name: xenial
+  - name: common-xenial
     image: solita/ubuntu-systemd
     image_version: latest
     privileged: True

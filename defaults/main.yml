@@ -20,6 +20,32 @@ boss__common_base_packages:
   - super
   - traceroute
   - tzdata
+  - bc
+  - bind9-host
+  - bwm-ng
+  - cron
+  - dbus
+  - dnsutils
+  - git
+  - htop
+  - makepasswd
+  - man-db
+  - manpages
+  - mc
+  - moreutils
+  - mutt
+  - ncdu
+  - netcat
+  - net-tools
+  - ntpdate
+  - psmisc
+  - screen
+  - sudo
+  - tcpdump
+  - uptimed
+  - w3m
+  - wget
+  - whois
 
 boss__common_disable_ipv6: True
 
